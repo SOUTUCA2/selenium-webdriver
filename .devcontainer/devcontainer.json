@@ -1,0 +1,19 @@
+{
+  "name": "Grupo 02 - Selenium WebDriver",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postCreateCommand": "npm ci",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Formulário de cadastro",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "remoteEnv": {
+    "CHROME_BIN": "/usr/bin/chromium",
+    "CHROMEDRIVER_PATH": "/usr/bin/chromedriver",
+    "HEADLESS": "true"
+  }
+}

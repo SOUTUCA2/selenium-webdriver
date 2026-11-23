@@ -1,0 +1,13 @@
+{
+  "name": "grupo-02-teste-interface-robo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demonstração de teste de interface com Selenium WebDriver",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/cadastro.test.js"
+  },
+  "dependencies": {
+    "selenium-webdriver": "4.27.0"
+  }
+}
